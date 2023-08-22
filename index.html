@@ -16,22 +16,21 @@
   </head>
   <body>
     <!-- Navigation Page -->
-    <nav class="navigation">
-      <div class="container">
-        <div class="menuBlock">
-          <div class="menuA">
-            <h1>DOLFIN</h1>
-            <input type="text" placeholder="Search" />
-          </div>
-          <div class="menuB">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shoes</a></li>
-              <li><a href="#">Backpacks</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
+    <nav class="meamNav">
+      <div class="container navbar">
+        <div class="logo">
+          <img src="assets/Products/brand.png" alt="Logo" />
         </div>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <button>&#128269;</button>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#Shoes">Shoes</a></li>
+          <li><a href="#BackPack">BackPack</a></li>
+        </ul>
+        <div class="mobile-toggle">&#9776;</div>
       </div>
     </nav>
     <!-- Home Page  -->
@@ -75,7 +74,7 @@
       </div>
     </section>
     <!-- Shoes Section / Page  -->
-    <section class="shoesPage">
+    <section id="Shoes" class="shoesPage">
       <div class="container">
         <h1>Shoes</h1>
         <div class="shoesBlocks">
@@ -103,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="backpackPage shoesPage">
+    <section id="BackPack" class="backpackPage shoesPage">
       <div class="container">
         <h1>BackPack</h1>
         <div class="shoesBlocks">
@@ -133,8 +132,14 @@
     </section>
     <footer>
       <div class="container">
-        <span>©All Right Reserved By Fokhrul Islam</span>
+        <span
+          >©All Right Reserved By
+          <a target="_blank" href="https://fokhrul2029.netlify.app/"
+            >Fokhrul Islam</a
+          ></span
+        >
       </div>
     </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
